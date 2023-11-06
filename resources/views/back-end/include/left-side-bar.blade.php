@@ -1,7 +1,7 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-        <a class="sidebar-brand brand-logo" href="index.html"><img src="{{asset('back-end-assets')}}/assets/images/logo.svg" alt="logo" /></a>
-        <a class="sidebar-brand brand-logo-mini" href="index.html"><img src="{{asset('back-end-assets')}}/assets/images/logo-mini.svg" alt="logo" /></a>
+        <a class="sidebar-brand brand-logo" href="{{route('dashboard')}}"><img src="{{asset('back-end-assets')}}/assets/images/logo.svg" alt="logo" /></a>
+        <a class="sidebar-brand brand-logo-mini" href="{{route('dashboard')}}"><img src="{{asset('back-end-assets')}}/assets/images/logo-mini.svg" alt="logo" /></a>
     </div>
     <ul class="nav">
         <li class="nav-item profile">
@@ -65,18 +65,34 @@
             </a>
         </li>
         <li class="nav-item menu-items">
-            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+            <a class="nav-link" data-toggle="collapse" href="#category" aria-expanded="false" aria-controls="category">
               <span class="menu-icon">
                 <i class="mdi mdi-laptop"></i>
               </span>
-                <span class="menu-title">Basic UI Elements</span>
+                <span class="menu-title">Elements Category</span>
                 <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="ui-basic">
+            <div class="collapse" id="category">
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"> <a class="nav-link" href="{{asset('back-end-assets')}}/pages/ui-features/buttons.html">Buttons</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="{{asset('back-end-assets')}}/pages/ui-features/dropdowns.html">Dropdowns</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="{{asset('back-end-assets')}}/pages/ui-features/typography.html">Typography</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{{route('categories.create')}}">Category Add</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{{asset('back-end-assets')}}/pages/ui-features/dropdowns.html">Category Details</a></li>
+
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#ui-product" aria-expanded="false" aria-controls="ui-product">
+              <span class="menu-icon">
+                <i class="mdi mdi-laptop"></i>
+              </span>
+                <span class="menu-title">Product</span>
+                <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-product">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"> <a class="nav-link" href="{{route('products.create')}}">Product Add</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{{asset('back-end-assets')}}/pages/ui-features/dropdowns.html">Product Details</a></li>
+
                 </ul>
             </div>
         </li>
