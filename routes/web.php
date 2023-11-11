@@ -21,8 +21,8 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',
 //    })->name('dashboard');
 
     Route::get('/dashboard',[DashboardController::class,'index'])->name('dashboard');
+    Route::resources(['categories'=> CategoryController::class]);
 
-    Route::resources(['categories'=>CategoryController::class]);
     Route::resources(['products'=>ProductController::class]);
 
 

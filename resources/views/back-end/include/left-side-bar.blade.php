@@ -65,94 +65,34 @@
             </a>
         </li>
         <li class="nav-item menu-items">
-            <a class="nav-link" data-toggle="collapse" href="#category" aria-expanded="false" aria-controls="category">
+            <a class="nav-link" data-toggle="collapse" href="#category" aria-expanded="true" aria-controls="category">
               <span class="menu-icon">
                 <i class="mdi mdi-laptop"></i>
               </span>
-                <span class="menu-title">Elements Category</span>
+                <span class="menu-title">Category</span>
                 <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="category">
                 <ul class="nav flex-column sub-menu">
                     <li class="nav-item"> <a class="nav-link" href="{{route('categories.create')}}">Category Add</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="{{asset('back-end-assets')}}/pages/ui-features/dropdowns.html">Category Details</a></li>
-
+                    <li class="nav-item"> <a class="nav-link" href="{{asset('back-end-assets')}}">Category Details</a></li>
                 </ul>
             </div>
         </li>
         <li class="nav-item menu-items">
-            <a class="nav-link" data-toggle="collapse" href="#ui-product" aria-expanded="false" aria-controls="ui-product">
+            <a class="nav-link" data-toggle="collapse" href="#product" aria-expanded="true" aria-controls="product">
               <span class="menu-icon">
                 <i class="mdi mdi-laptop"></i>
               </span>
                 <span class="menu-title">Product</span>
                 <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="ui-product">
+            <div class="collapse" id="product">
                 <ul class="nav flex-column sub-menu">
                     <li class="nav-item"> <a class="nav-link" href="{{route('products.create')}}">Product Add</a></li>
-                    <li class="nav-item"> <a class="nav-link" href="{{asset('back-end-assets')}}/pages/ui-features/dropdowns.html">Product Details</a></li>
-
+                    <li class="nav-item"> <a class="nav-link" href="{{asset('back-end-assets')}}">Product Details</a></li>
                 </ul>
             </div>
-        </li>
-        <li class="nav-item menu-items">
-            <a class="nav-link" href="{{asset('back-end-assets')}}/pages/forms/basic_elements.html">
-              <span class="menu-icon">
-                <i class="mdi mdi-playlist-play"></i>
-              </span>
-                <span class="menu-title">Form Elements</span>
-            </a>
-        </li>
-        <li class="nav-item menu-items">
-            <a class="nav-link" href="{{asset('back-end-assets')}}/pages/tables/basic-table.html">
-              <span class="menu-icon">
-                <i class="mdi mdi-table-large"></i>
-              </span>
-                <span class="menu-title">Tables</span>
-            </a>
-        </li>
-        <li class="nav-item menu-items">
-            <a class="nav-link" href="{{asset('back-end-assets')}}/pages/charts/chartjs.html">
-              <span class="menu-icon">
-                <i class="mdi mdi-chart-bar"></i>
-              </span>
-                <span class="menu-title">Charts</span>
-            </a>
-        </li>
-        <li class="nav-item menu-items">
-            <a class="nav-link" href="{{asset('back-end-assets')}}/pages/icons/mdi.html">
-              <span class="menu-icon">
-                <i class="mdi mdi-contacts"></i>
-              </span>
-                <span class="menu-title">Icons</span>
-            </a>
-        </li>
-        <li class="nav-item menu-items">
-            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
-              <span class="menu-icon">
-                <i class="mdi mdi-security"></i>
-              </span>
-                <span class="menu-title">User Pages</span>
-                <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="auth">
-                <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"> <a class="nav-link" href="{{asset('back-end-assets')}}/pages/samples/blank-page.html"> Blank Page </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="{{asset('back-end-assets')}}/pages/samples/error-404.html"> 404 </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="{{asset('back-end-assets')}}/pages/samples/error-500.html"> 500 </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="{{asset('back-end-assets')}}/pages/samples/login.html"> Login </a></li>
-                    <li class="nav-item"> <a class="nav-link" href="{{asset('back-end-assets')}}/pages/samples/register.html"> Register </a></li>
-                </ul>
-            </div>
-        </li>
-        <li class="nav-item menu-items">
-            <a class="nav-link" href="http://www.bootstrapdash.com/demo/corona-free/jquery/documentation/documentation.html">
-              <span class="menu-icon">
-                <i class="mdi mdi-file-document-box"></i>
-              </span>
-                <span class="menu-title">Documentation</span>
-            </a>
         </li>
     </ul>
 </nav>
